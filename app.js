@@ -1,10 +1,11 @@
 let displayedWord = document.querySelector(".word");
 let enterBtn = document.querySelector(".enter-btn");
 let msg=document.querySelector(".msg");
+let restart=document.querySelector(".refresh");
 let count=0;
 
 const selectWord = () => {
-    const wordsList = ["hello", "welcome", "great", "happy", "projects", "winner", "difficult", "dangerous", "curious", "knowledge", "science", "seven"];
+    const wordsList = ["hello", "welcome", "great", "happy", "projects", "winner", "difficult", "dangerous", "curious", "knowledge", "science", "seven", "weekends", "damaging"];
     let ranNum = Math.floor(Math.random() * (wordsList.length));
     let givenWord = wordsList[ranNum]
     shuffleLetters(givenWord);
@@ -43,4 +44,12 @@ const checkResult=()=>{
     }
     
 }
+
+restart.addEventListener("click",()=>{
+    selectedWord = selectWord();
+    msg.innerHTML="What do you think the word is?";
+    msg.style.color="#022707";
+    document.getElementById("user-input").value="";
+    count=0;
+})
 

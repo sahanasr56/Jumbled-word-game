@@ -29,7 +29,7 @@ body{
     gap: 2rem;
 }
 
-.enter-btn{
+.enter-btn, .refresh{
     margin-top: 20px;
     background-color: #060707;
     color: #d8f3dc;
