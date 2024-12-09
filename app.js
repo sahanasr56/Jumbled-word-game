@@ -5,7 +5,7 @@ let restart=document.querySelector(".refresh");
 let count=0;
 
 const selectWord = () => {
-    const wordsList = ["hello", "welcome", "great", "happy", "projects", "winner", "difficult", "dangerous", "curious", "knowledge", "science", "seven", "weekends", "damaging", "repository", "objects", "wikipedia", "gorgeous"];
+    const wordsList = ["hello", "welcome", "great", "happy", "projects", "winner", "difficult", "dangerous", "curious", "knowledge", "science", "seven", "weekends", "damaging", "repository", "explore", "objects", "wikipedia", "gorgeous"];
     let ranNum = Math.floor(Math.random() * (wordsList.length));
     let givenWord = wordsList[ranNum]
     shuffleLetters(givenWord);
