@@ -10,6 +10,11 @@ body{
     font-size: 7rem;
     letter-spacing: 2.5rem;
     color: #fff;
+
+    @media screen and (max-width: 992px) {
+        font-size: 2rem;
+    letter-spacing: 1.5rem;
+    }
 }
 
 .container{
@@ -54,6 +59,10 @@ input{
     background-color: beige;
     padding: 10px;
     border-radius: 5px;
+
+    @media screen and (max-width: 992px) {
+        font-size: 1rem;
+    }
 }
 
 .wrong{
