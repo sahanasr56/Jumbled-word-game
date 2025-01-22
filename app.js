@@ -31,7 +31,7 @@ enterBtn.addEventListener("click", () => {
 
 const checkResult=()=>{
     if(count===0){
-        let userInput = document.getElementById("user-input").value;
+        let userInput = (document.getElementById("user-input").value).toLowerCase();
         if (userInput.length>0){
             if (userInput === selectedWord) {
                 msg.innerHTML="Hurry! You guessed it correctly!";
